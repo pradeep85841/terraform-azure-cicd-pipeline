@@ -1,6 +1,6 @@
-variable "resource_group_name" {}
-variable "location" {}
-variable "vnet_name" {}
-variable "vnet_cidr" {}
-variable "subnet_name" {}
-variable "subnet_cidr" {}
+variable "resource_group_name" { type = string }
+variable "location"            { type = string }
+variable "vnet_name"           { type = string }
+variable "vnet_cidr"           { type = list(string) }
+variable "subnet_name"         { type = string }
+variable "subnet_cidr"         { type = list(string) }
